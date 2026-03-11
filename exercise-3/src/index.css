@@ -80,3 +80,11 @@ button {
 button:hover {
   background: #6c1fd6;
 }
+.input-error {
+  color: #9e0202;
+  font-weight: bold;
+}
+.input-result {
+  color: #e5d9f1;
+  font-weight: bold;
+}

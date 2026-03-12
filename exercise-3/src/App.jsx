@@ -20,14 +20,19 @@ function App() {
     const numA = parseFloat(a);
     const numB = parseFloat(b);
 
-    if (isNaN(numA) || isNaN(numB)) {
-      setResult("Error: Please enter valid numbers");
+    const isValidNumber = /^-?\d+(\.\d+)?$/;
+
+    
+    if (!isValidNumber.test(a) || !isValidNumber.test(b)) {
+      setResult("Error: Please enter valid numbers only");
       setIsError(true);
     } else {
+      
       setResult(numA + numB);
       setIsError(false);
-
     }
+
+    
   }
   return (
     <main>
